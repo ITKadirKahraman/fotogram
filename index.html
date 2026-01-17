@@ -15,20 +15,20 @@
         <article class="photoAlbum">
             <h1>Photo album from Kadir Kahraman</h1>
             <section>
-                <img src="img/auto.svg" alt="Auto">
-                <img src="img/coden.svg" alt="Programmieren">
-                <img src="img/doener.svg" alt="Döner Tasche">
-                <img src="img/galaxie.svg" alt="Galaxie">
-                <img src="img/gym.svg" alt="GYM">
-                <img src="img/japan.svg" alt="Japan">
-                <img src="img/macbook.svg" alt="MacBook">
+                <button class="img-btn" onclick="openDialog(this)"><img src="img/auto.svg" alt="Auto"></button>
+                <button class="img-btn" onclick="openDialog(this)"><img src="img/coden.svg" alt="Programmieren"></button>
+                <button class="img-btn" onclick="openDialog(this)"><img src="img/doener.svg" alt="Döner Tasche"></button>
+                <button class="img-btn" onclick="openDialog(this)"><img src="img/galaxie.svg" alt="Galaxie"></button>
+                <button class="img-btn" onclick="openDialog(this)"><img src="img/gym.svg" alt="GYM"></button>
+                <button class="img-btn" onclick="openDialog(this)"><img src="img/japan.svg" alt="Japan"></button>
+                <button class="img-btn" onclick="openDialog(this)"><img src="img/macbook.svg" alt="MacBook"></button>
             </section>
             <section class="photoUnder">
-                <img src="img/pizza.svg" alt="Pizza">
-                <img src="img/spaghetti.svg" alt="Spaghetti">
-                <img src="img/spazieren.svg" alt="Spazieren">
-                <img src="img/vogel.svg" alt="Vogel">
-                <img src="img/weltraum.svg" alt="Weltraum">
+                <button class="img-btn" onclick="openDialog(this)"><img src="img/pizza.svg" alt="Pizza"></button>
+                <button class="img-btn" onclick="openDialog(this)"><img src="img/spaghetti.svg" alt="Spaghetti"></button>
+                <button class="img-btn" onclick="openDialog(this)"><img src="img/spazieren.svg" alt="Spazieren"></button>
+                <button class="img-btn" onclick="openDialog(this)"><img src="img/vogel.svg" alt="Vogel"></button>
+                <button class="img-btn" onclick="openDialog(this)"><img src="img/weltraum.svg" alt="Weltraum"></button>
             </section>
         </article>
 
@@ -59,6 +59,68 @@
                 <img src="img/weltraum.svg" alt="Weltraum">
             </section>
         </article>
+        <article>
+            <dialog class="dialog" id="myDialogAuto">
+                <header class="dialogHeader"><h2 class="h2">Traumauto</h2><button class="close-btn" onclick="closeDialog()"><img src="img/close.svg" alt="Close"></button></header>
+                <section class="thumbnailImage"><img src="img/auto.svg" alt="Auto"></section>
+                <footer></footer>
+            </dialog>
+            <dialog class="dialog" id="myDialogCoden">
+                <header class="dialogHeader"><h2 class="h2">Programmieren</h2><button class="close-btn" onclick="closeDialog()"><img src="img/close.svg" alt="Close"></button></header>
+                <section class="thumbnailImage"><img src="img/coden.svg" alt="Coden"></section>
+                <footer></footer>
+            </dialog>
+            <dialog class="dialog" id="myDialogDoener">
+                <header class="dialogHeader"><h2 class="h2">Döner</h2><button class="close-btn" onclick="closeDialog()"><img src="img/close.svg" alt="Close"></button></header>
+                <section class="thumbnailImage"><img src="img/doener.svg" alt="Döner"></section>
+                <footer></footer>
+            </dialog>
+            <dialog class="dialog" id="myDialogGalaxie">
+                <header class="dialogHeader"><h2 class="h2">Galaxie</h2><button class="close-btn" onclick="closeDialog()"><img src="img/close.svg" alt="Close"></button></header>
+                <section class="thumbnailImage"><img src="img/galaxie.svg" alt="Galaxie"></section>
+                <footer></footer>
+            </dialog>
+            <dialog class="dialog" id="myDialogGym">
+                <header class="dialogHeader"><h2 class="h2">GYM</h2><button class="close-btn" onclick="closeDialog()"><img src="img/close.svg" alt="Close"></button></header>
+                <section class="thumbnailImage"><img src="img/gym.svg" alt="GYM"></section>
+                <footer></footer>
+            </dialog>
+            <dialog class="dialog" id="myDialogJapan">
+                <header class="dialogHeader"><h2 class="h2">Japan</h2><button class="close-btn" onclick="closeDialog()"><img src="img/close.svg" alt="Close"></button></header>
+                <section class="thumbnailImage"><img src="img/japan.svg" alt="Japan"></section>
+                <footer></footer>
+            </dialog>
+            <dialog class="dialog" id="myDialogMacbook">
+                <header class="dialogHeader"><h2 class="h2">MacBook</h2><button class="close-btn" onclick="closeDialog()"><img src="img/close.svg" alt="Close"></button></header>
+                <section class="thumbnailImage"><img src="img/macbook.svg" alt="MacBook"></section>
+                <footer></footer>
+            </dialog>
+            <dialog class="dialog" id="myDialogPizza">
+                <header class="dialogHeader"><h2 class="h2">Pizza</h2><button class="close-btn" onclick="closeDialog()"><img src="img/close.svg" alt="Close"></button></header>
+                <section class="thumbnailImage"><img src="img/pizza.svg" alt="Pizza"></section>
+                <footer></footer>
+            </dialog>
+            <dialog class="dialog" id="myDialogSpaghetti">
+                <header class="dialogHeader"><h2 class="h2">Spaghetti</h2><button class="close-btn" onclick="closeDialog()"><img src="img/close.svg" alt="Close"></button></header>
+                <section class="thumbnailImage"><img src="img/spaghetti.svg" alt="Spaghetti"></section>
+                <footer></footer>
+            </dialog>
+            <dialog class="dialog" id="myDialogSpazieren">
+                <header class="dialogHeader"><h2 class="h2">Spazieren</h2><button class="close-btn" onclick="closeDialog()"><img src="img/close.svg" alt="Close"></button></header>
+                <section class="thumbnailImage"><img src="img/spazieren.svg" alt="Spazieren"></section>
+                <footer></footer>
+            </dialog>
+            <dialog class="dialog" id="myDialogVogel">
+                <header class="dialogHeader"><h2 class="h2">Vogel</h2><button class="close-btn" onclick="closeDialog()"><img src="img/close.svg" alt="Close"></button></header>
+                <section class="thumbnailImage"><img src="img/vogel.svg" alt="Vogel"></section>
+                <footer></footer>
+            </dialog>
+            <dialog class="dialog" id="myDialogWeltraum">
+                <header class="dialogHeader"><h2 class="h2">Weltraum</h2><button class="close-btn" onclick="closeDialog()"><img src="img/close.svg" alt="Close"></button></header>
+                <section class="thumbnailImage"><img src="img/weltraum.svg" alt="Weltraum"></section>
+                <footer></footer>
+            </dialog>
+        </article>
     </main>
     <footer>
         <div class="footer">
@@ -66,5 +128,6 @@
             <p>© 2026 Developer Akademie GmbH</p>
         </div>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>
