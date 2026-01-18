@@ -3,6 +3,10 @@
     margin: 0;
 }
 
+html, body {
+  overflow-x: hidden;
+}
+
 .header{
     background-color: rgba(9, 33, 42, 1);
     height: 80px;
@@ -200,6 +204,73 @@ footer{
         align-items: center;
         padding-top: 40px;
         padding-bottom: 40px;
+    }
+
+    .img-btn{
+        padding: 0;
+        border: none;
+        background: none;
+        cursor: pointer;
+        width: 128px;
+        height: 128px;
+    }
+
+    .img-btn img{
+        display: flex;
+    }
+
+    .close-btn{
+        padding: 0;
+        border: none;
+        background: none;
+        cursor: pointer;
+        width: 40px;
+        height: 40px;
+    }
+
+    .close-btn img{
+        display: flex;
+    }
+
+    .dialog{
+        display: flex;
+        flex-direction: column;
+        width: 90vw;
+        max-width: 90vw;
+        overflow: hidden;
+        border-radius: 25px;
+        width: 360px;
+        height: 440px;
+        background-color: rgba(9, 33, 42, 1);
+    }
+
+    .dialogHeader{
+        display: flex;
+        width: 320px;
+        padding-left: 20px;
+    }
+
+    .dialog h2{
+        color: white;
+    }
+
+    .dialog img{
+        width: 40px;
+        height: 40px;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+    }
+
+    .thumbnailImage{
+        padding: 10px 20px;
+        width: 320px;
+        height: 320px;
+    }
+
+    .thumbnailImage img{
+        width: 320px;
+        height: 320px;
     }
 
     footer{
