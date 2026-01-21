@@ -11,71 +11,33 @@
     <header class="header">
         <img src="img/Capa_1.png" alt="Fotogram mit Schriftzug">
     </header>
-    <main class="main">
-        <article class="photoAlbum">
-            <h1>My personal album</h1>
-            <section>
-                <button class="img-btn" onclick="openDialog(this)"><img src="img/auto.svg" alt="Auto"></button>
-                <button class="img-btn" onclick="openDialog(this)"><img src="img/coden.svg" alt="Programmieren"></button>
-                <button class="img-btn" onclick="openDialog(this)"><img src="img/doener.svg" alt="Döner Tasche"></button>
-                <button class="img-btn" onclick="openDialog(this)"><img src="img/galaxie.svg" alt="Galaxie"></button>
-                <button class="img-btn" onclick="openDialog(this)"><img src="img/gym.svg" alt="GYM"></button>
-                <button class="img-btn" onclick="openDialog(this)"><img src="img/japan.svg" alt="Japan"></button>
-                <button class="img-btn" onclick="openDialog(this)"><img src="img/macbook.svg" alt="MacBook"></button>
-            </section>
-            <section class="photoUnder">
-                <button class="img-btn" onclick="openDialog(this)"><img src="img/pizza.svg" alt="Pizza"></button>
-                <button class="img-btn" onclick="openDialog(this)"><img src="img/spaghetti.svg" alt="Spaghetti"></button>
-                <button class="img-btn" onclick="openDialog(this)"><img src="img/spazieren.svg" alt="Spazieren"></button>
-                <button class="img-btn" onclick="openDialog(this)"><img src="img/vogel.svg" alt="Vogel"></button>
-                <button class="img-btn" onclick="openDialog(this)"><img src="img/weltraum.svg" alt="Weltraum"></button>
-            </section>
-        </article>
-
-        <article class="responsiveArticle">
-            <h1>My personal album</h1>
-            <section>
-                <button class="img-btn" onclick="openDialog(this)"><img src="img/auto.svg" alt="Auto"></button>
-                <button class="img-btn" onclick="openDialog(this)"><img src="img/coden.svg" alt="Programmieren"></button>
-            </section>
-            <section>
-                <button class="img-btn" onclick="openDialog(this)"><img src="img/doener.svg" alt="Döner Tasche"></button>
-                <button class="img-btn" onclick="openDialog(this)"><img src="img/galaxie.svg" alt="Galaxie"></button>
-            </section>
-            <section>
-                <button class="img-btn" onclick="openDialog(this)"><img src="img/gym.svg" alt="GYM"></button>
-                <button class="img-btn" onclick="openDialog(this)"><img src="img/japan.svg" alt="Japan"></button>
-            </section>
-            <section>
-                <button class="img-btn" onclick="openDialog(this)"><img src="img/macbook.svg" alt="MacBook"></button>
-                <button class="img-btn" onclick="openDialog(this)"><img src="img/pizza.svg" alt="Pizza"></button>
-            </section>
-            <section>
-                <button class="img-btn" onclick="openDialog(this)"><img src="img/spaghetti.svg" alt="Spaghetti"></button>
-                <button class="img-btn" onclick="openDialog(this)"><img src="img/spazieren.svg" alt="Spazieren"></button>
-            </section>
-            <section>
-                <button class="img-btn" onclick="openDialog(this)"><img src="img/vogel.svg" alt="Vogel"></button>
-                <button class="img-btn" onclick="openDialog(this)"><img src="img/weltraum.svg" alt="Weltraum"></button>
-            </section>
-        </article>
+    <main>
+        <section class="headlineContainer">
+            <h1 class="headlineH1">My personal album</h1>
+        </section>
         <article>
-            <dialog id="fullDialog" class="dialog" id="myDialogWeltraum">
-                <header class="dialogHeader"><h2 class="h2">Weltraum</h2><button class="close-btn" onclick="closeDialog()"><img src="img/close.svg" alt="Close"></button></header>
-                <section class="thumbnailImage"><img src="img/weltraum.svg" alt="Weltraum"></section>
-                <footer>
-                    <div class="firstArrows">
-                        <button class="btn-arrow" id="prevWeltraum"><img src="img/arrowleft.svg" alt="Arrow Prev"></button>
-                        <p><strong>12/12</strong></p>
-                        <button class="btn-arrow" id="nextWeltraum"><img src="img/arrowright.svg" alt="Arrow Right"></button>
-                    </div>
-                </footer>
-            </dialog>
+            <section class="photoGallary" id="photoGallary"></section>
+            <button class="img-btn" onclick="openDialog()" aria-label="Dialog öffnen">
+                <dialog id="photo" class="dialogPhoto" aria-labelledby="ariaDialogPhoto">
+                    <header>
+                        <h3 class="dialogHeadline" id="dialogHeadline">placeholder</h3>
+                        <button class="close-btn" onclick="closeDialog()" aria-label="schließen">
+                    </header>
+                    <main>
+                        <img src="" alt="" id="dialogPhoto">
+                    </main>
+                    <footer>
+                        <button class="arrowLeft" id="arrowLeft" aria-label="Pfeil nach links"></button>
+                        <h3 class="pageNumber" id="pageNumber">placeholder</h3>
+                        <button class="arrowRight" id="arrowRight" aria-left="Pfeil nach rechts"></button>
+                    </footer>
+                </dialog>
+            </button>
         </article>
     </main>
     <footer>
         <div class="footer">
-            <img class="footerImg" src="img/developerAkademie.png" alt="Developer Akademie Logo">
+            <img class="footerImg" src="img/developerAkademie.png" alt="Developer Akademie Logo" aria-label="Developer Akademie Logo">
             <p>© 2026 Developer Akademie GmbH</p>
         </div>
     </footer>
