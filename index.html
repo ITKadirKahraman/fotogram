@@ -18,17 +18,17 @@
         <article>
             <section class="photoGallary" id="photoGallary"></section>
             <button class="img-btn" onclick="openDialog()" aria-label="Dialog öffnen">
-                <dialog id="photo" class="dialogPhoto" aria-labelledby="ariaDialogPhoto">
+                <dialog id="fullPhoto" class="dialogPhoto" aria-labelledby="ariaDialogPhoto">
                     <header>
                         <h3 class="dialogHeadline" id="dialogHeadline">placeholder</h3>
-                        <button class="close-btn" onclick="closeDialog()" aria-label="schließen">
+                        <button class="close-btn" id="closeDialog" aria-label="schließen"></button>
                     </header>
                     <main>
                         <img src="" alt="" id="dialogPhoto">
                     </main>
                     <footer>
                         <button class="arrowLeft" id="arrowLeft" aria-label="Pfeil nach links"></button>
-                        <h3 class="pageNumber" id="pageNumber">placeholder</h3>
+                        <h3 class="pageNumber" id="dialogPageNumber">placeholder</h3>
                         <button class="arrowRight" id="arrowRight" aria-left="Pfeil nach rechts"></button>
                     </footer>
                 </dialog>
