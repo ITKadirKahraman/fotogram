@@ -1,3 +1,14 @@
+let dialogREF = document.getElementById("fullPhoto");
+let dialogInitPhoto = ducument.getElementById('photoGallary');
+let closeDialog = document.getElementById('closeDialog');
+let dialogHeadline = document.getElementById('dialogHeadline');
+let dialogPhoto = document.getElementById('dialogPhoto');
+let dialogPageNumber = document.getElementById('dialogPageNumber');
+let dialogLeft = document.getElementById('arrowLeft');
+let dialogRight = document.getElementById('arrowRight');
+let dialogID = 0;
+let dialogIndex = 0;
+
 let allImages = 
     [
         {id: 1, name: "Mein Traumauto.", link: "img/auto.svg", alt: "Traumauto"},
@@ -14,9 +25,12 @@ let allImages =
         {id: 12, name: "Der Raum der sich ausdehnt.", link: "img/weltraum.svg", alt: "Weltraum"}
     ];
 
-
-let dialogREF = document.getElementById("fullDialog");
-
+function initGallary() {
+    dialogInitPhoto.innerHTML = "";
+    for(let index = 0; index < allImages.length; index++){
+        dialogInitPhoto.innerHTML += photoTemplet(index);
+    }
+}
 
 function photoTemplet(index){
     return `<section>
@@ -48,4 +62,30 @@ function openDialog() {
     dialogREF.showModal();
 }
 
+function fillDialog(i) {
+    dialogHeadline.innerHTML = allImages[i].name;
+    dialogPhoto.scr = allImages[i].link;
+    dialogPhoto.alt = allImages[i].alt;
+    dialogPageNumber.innerHTML = allImages[i].id + " / " + allImages.length;
+}
 
+dialogREF.addEventListener("click", (event) => {
+    if(event.target == dialogREF || event.target == closeDialog) {
+        dialogREF.close();
+        initGallary();
+    }
+
+    if(event.target == dialogLeft){
+        dialogID--;
+        if(dialogID < 1){
+            dialogID = allImages.length;
+        }
+        renderDialog(dialogID);
+    }else if(event.target == dialogRight){
+        dialogID++;
+        if(dialogID > allImages.length){
+            dialogID = 1;
+        }
+        renderDialog(dialogID);
+    }
+});
