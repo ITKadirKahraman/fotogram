@@ -15,15 +15,15 @@ let allImages =
         {id: 1, name: "Mein Traumauto.", link: "img/auto.svg", alt: "Traumauto"},
         {id: 2, name: "Mein Ziel: Coden.", link: "img/coden.svg", alt: "Programmierer programmiert"},
         {id: 3, name: "Döner Kebab.", link: "img/doener.svg", alt: "Dönertasche"},
-        {id: 4, name: "Das ist meine Galaxie.", link: "img/galaxie.svg", alt: "Galaxie"},
-        {id: 5, name: "Mein Traumkörper: Sixpack.", link: "img/gym.svg", alt: "Gym"},
-        {id: 6, name: "Das Land der Träume.", link: "img/japan.svg", alt: "Japan"},
-        {id: 7, name: "Ein MacBook für die Arbeit.", link: "img/macbook.svg", alt: "MacBook"},
-        {id: 8, name: "Teigware: Nudel & Pizza.", link: "img/pizza.svg", alt: "Pizza"},
-        {id: 9, name: "Italien? Spaghetti!", link: "img/spaghetti.svg", alt: "Spaghetti"},
-        {id: 10, name: "Jeden Tag 10K Schritte.", link: "img/spazieren.svg", alt: "Spazieren"},
-        {id: 11, name: "Ich liebe Vögel.", link: "img/vogel.svg", alt: "Vogel"},
-        {id: 12, name: "Der Raum der sich ausdehnt.", link: "img/weltraum.svg", alt: "Weltraum"}
+        {id: 4, name: "Galaxie.", link: "img/galaxie.svg", alt: "Galaxie"},
+        {id: 5, name: "Sixpack.", link: "img/gym.svg", alt: "Gym"},
+        {id: 6, name: "Traume.", link: "img/japan.svg", alt: "Japan"},
+        {id: 7, name: "MacBook: Arbeit.", link: "img/macbook.svg", alt: "MacBook"},
+        {id: 8, name: "Nudel & Pizza.", link: "img/pizza.svg", alt: "Pizza"},
+        {id: 9, name: "Italien?!", link: "img/spaghetti.svg", alt: "Spaghetti"},
+        {id: 10, name: "10K Schritte.", link: "img/spazieren.svg", alt: "Spazieren"},
+        {id: 11, name: "Vögel.", link: "img/vogel.svg", alt: "Vogel"},
+        {id: 12, name: "Der Raum.", link: "img/weltraum.svg", alt: "Weltraum"}
     ];
 
 function initGallary() {
