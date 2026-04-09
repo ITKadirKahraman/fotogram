@@ -17,23 +17,23 @@
         </section>
         <article>
             <section class="photoGallary" id="photoGallary"></section>
-            <button class="img-btn" onclick="openDialog()" aria-label="Dialog öffnen">
-                <dialog id="fullPhoto" class="dialogPhoto" aria-labelledby="ariaDialogPhoto">
-                    <header>
-                        <h2 class="dialogHeadline" id="dialogHeadline gridLayout">placeholder</h3>
-                        <button class="close-btn" id="closeDialog" aria-label="schließen"></button>
-                    </header>
-                    <figure>
-                        <img class="figureImg" src="/shared-assets/images/examples/elephant.jpg" alt="Elephant at sunset" id="dialogPhoto"/>
-                        <figcaption class="figCap">An elephant at sunset</figcaption>
-                    </figure>
-                    <nav>
-                        <button class="arrowLeft" id="arrowLeft" aria-label="Pfeil nach links"></button>
-                            <p class="pageNumber" id="dialogPageNumber">placeholder</p>
-                        <button class="arrowRight" id="arrowRight" aria-left="Pfeil nach rechts"></button>
-                    </nav>
-                </dialog>
-            </button>
+            <dialog id="fullPhoto" class="dialogPhoto" aria-labelledby="dialogHeadline">
+                <header class="dialogHeader">
+                    <h2 class="dialogHeadline" id="dialogHeadline">placeholder</h2>
+                    <button class="closeBtn" id="closeDialog" aria-label="schließen">X</button>
+                </header>
+
+                <figure>
+                    <img class="figureImg" id="dialogPhoto"/>
+                    <figcaption class="figCap" id="dialogCaption"></figcaption>
+                </figure>
+
+                <nav>
+                    <button class="arrowLeft" id="arrowLeft" aria-label="Pfeil nach links">←</button>
+                    <p class="pageNumber" id="dialogPageNumber">placeholder</p>
+                    <button class="arrowRight" id="arrowRight" aria-label="Pfeil nach rechts">→</button>
+                </nav>
+            </dialog>
         </article>
     </main>
     <footer>
